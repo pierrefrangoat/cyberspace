@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Viaweb : le web à portée de tous ? </title>
+
+    <!-- ==== STYLE ==== -->
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #ffed00;               
+            color: #000;                      
+            font-family: "Courier New", Courier, monospace;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;   /* centre vertical */
+            align-items: flex-start;   /* aligne à gauche (style console) */
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 2rem;
+            color: #000;
+        }
+
+        p {
+            margin: 1rem 0;
+        }
+
+        a, .btn {
+            display: inline-block;
+            margin: 0.4rem 0;
+            padding: 0.4rem 0.8rem;
+            color: #000;
+            background: transparent;
+            border: 1px solid #000;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        a:hover, .btn:hover {
+            background: #fb5bf9;
+            color: #000;
+        }
+
+        .cursor {
+            display: inline-block;
+            animation: blink 1s steps(2, start) infinite;
+        }
+        @keyframes blink {
+            to { visibility: hidden; }
+        }
+    </style>
+</head>
+
+<body>
+<div class="wrapper">
+    <h1>Viaweb : le web à portée de tous ? </h1>
+
+
+    <p>   
+    Dès 1995, les américains P.Graham, T. Blackwell et R. Morris lancent Viaweb, une application web offrant la possibilité aux particuliers de construire leurs propres sites web, sans avoir besoin d'un bagage technique trop conséquent. Cette interface, et celles  du même type qui la suivront, changent le web en le rendant plus accessible. 
+    </p>
+
+
+    <a class="btn" href="../index.html">← Retour à la carte interactive</a>
+
+    <p><span class="cursor">_</span></p>
+</div>
+</body>
+</html>
+
