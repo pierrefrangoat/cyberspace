@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>IPhone</title>
+
+    <!-- ==== STYLE ==== -->
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #ffed00;               
+            color: #000;                      
+            font-family: "Courier New", Courier, monospace;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;   /* centre vertical */
+            align-items: flex-start;   /* aligne à gauche (style console) */
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 2rem;
+            color: #000;
+        }
+
+        p {
+            margin: 1rem 0;
+        }
+
+        a, .btn {
+            display: inline-block;
+            margin: 0.4rem 0;
+            padding: 0.4rem 0.8rem;
+            color: #000;
+            background: transparent;
+            border: 1px solid #000;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        a:hover, .btn:hover {
+            background: #fb5bf9;
+            color: #000;
+        }
+
+        .cursor {
+            display: inline-block;
+            animation: blink 1s steps(2, start) infinite;
+        }
+        @keyframes blink {
+            to { visibility: hidden; }
+        }
+    </style>
+</head>
+
+<body>
+<div class="wrapper">
+    <h1>Iphone </h1>
+
+    <p>
+        Premier smartphone d'Apple, lancé en juin 2007. L'Iphone est à la fois un téléphone, un IPod (baladeur mp3), et un ordinateur personnel. La keynote de Steve Jobs a ce sujet a fait date : 
+        à partir de cette conférence, le monde de la tech commence à parler de SoLoMo (social local mobile), nouveau territoire à conquérir impérativement pour toute boîte de la Silicon Valley. <br><br>
+    </p>
+
+    <p>
+        <a class="btn"
+           href="https://youtu.be/MnrJzXM7a6o?si=7lJSOOTqbl6NSFBD" 
+           target="_blank"
+           rel="noopener">Vidéo de la conférence de présentation, keynote, de l'Iphone (vidéo YouTube)</a><br>
+    </p>
+
+    <a class="btn" href="../index.html">← Retour à la carte interactive</a>
+
+    <p><span class="cursor">_</span></p>
+</div>
+</body>
+</html>
