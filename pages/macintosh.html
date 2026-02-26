@@ -2,20 +2,94 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Macintosh 1984</title>
+    <title>{{ MACINTOSH }}</title>
+
+    <!-- ==== STYLE ==== -->
     <style>
-        body {font-family:sans-serif; margin:20px;}
-        a.back {display:inline-block; margin-top:20px; color:#0066cc;}
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #000;               /* noir total */
+            color: #00ff00;                       /* vert néon */
+            font-family: "Courier New", Courier, monospace;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+        
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;   /* centre vertical */
+            align-items: flex-start;   /* aligne à gauche (style console) */
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 2rem;
+            color: #00ff00;
+        }
+
+        p {
+            margin: 1rem 0;
+        }
+
+        a, .btn {
+            display: inline-block;
+            margin: 0.4rem 0;
+            padding: 0.4rem 0.8rem;
+            color: #00ff00;
+            background: transparent;
+            border: 1px solid #00ff00;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        a:hover, .btn:hover {
+            background: #00ff00;
+            color: #000;
+        }
+
+        .cursor {
+            display: inline-block;
+            animation: blink 1s steps(2, start) infinite;
+        }
+        @keyframes blink {
+            to { visibility: hidden; }
+        }
     </style>
 </head>
+
 <body>
-<h1>Macintosh 1984</h1>
-<p>
+<div class="wrapper">
+    <h1>{{ MACINTOSH}}</h1>
+
+   <p>
   Ordinateur personnel d'Apple introduit en janvier 1984. Son interface graphique claire, fermée et son système d'icônes font de cet ordinateur personnel, qui emploie pourtant des technologies déjà existantes, un outil inédit pour l'utilisateur. Sa publicité, réalisée par Ridley Scott, est particulièrement marquante.<br><br>
-  <a href="https://www.universalis.fr/encyclopedie/apple/2-la-revolution-macintosh/" target="_blank">Article de vulgarisation (Universalis) sur la révolution Macintosh (page web)</a>
-  <a href="https://youtu.be/2zfqw8nhUwA?si=nZksaBkZneZiQCY4" target="_blank">Publicité Apple Macintosh 1984 (vidéo YouTube)</a>
 </p>
-<img src="../img/macintosh-1984.png" alt="Macintosh 1984" style="max-width:100%; height:auto;">
-<a class="back" href="../index.html">← Retour à la carte interactive</a>
+
+
+<a href="https://www.universalis.fr/encyclopedie/apple/2-la-revolution-macintosh/" target="_blank">Article de vulgarisation (Universalis) sur la révolution Macintosh (page web)</a>
+  <a href="https://youtu.be/2zfqw8nhUwA?si=nZksaBkZneZiQCY4" target="_blank">Publicité Apple Macintosh 1984 (vidéo YouTube)</a>
+
+    <!-- ==== BOUTONS DE NAVIGATION ==== -->
+    <a class="btn" href="../index.html">← Retour à la carte interactive</a>
+
+    <!-- Si vous avez d’autres pages liées, ajoutez‑les ici -->
+    <!--
+    <a class="btn" href="autre-page.html">Lien vers une autre page</a>
+    -->
+
+    <!-- Petit effet « prompt » pour rappeler la console -->
+    <p><span class="cursor">_</span></p>
+</div>
 </body>
 </html>
+
+
+
+
