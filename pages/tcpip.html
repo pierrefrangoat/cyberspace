@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Le modèle TCP-IP, prémisse du réseau </title>
+
+    <!-- ==== STYLE ==== -->
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #ffed00;               
+            color: #000;                      
+            font-family: "Courier New", Courier, monospace;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;   /* centre vertical */
+            align-items: flex-start;   /* aligne à gauche (style console) */
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 2rem;
+            color: #000;
+        }
+
+        p {
+            margin: 1rem 0;
+        }
+
+        a, .btn {
+            display: inline-block;
+            margin: 0.4rem 0;
+            padding: 0.4rem 0.8rem;
+            color: #000;
+            background: transparent;
+            border: 1px solid #000;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        a:hover, .btn:hover {
+            background: #fb5bf9;
+            color: #000;
+        }
+
+        .cursor {
+            display: inline-block;
+            animation: blink 1s steps(2, start) infinite;
+        }
+        @keyframes blink {
+            to { visibility: hidden; }
+        }
+    </style>
+</head>
+
+<body>
+<div class="wrapper">
+    <h1>Le modèle TCP-IP, prémisse du réseau </h1>
+
+
+    <p>   
+         Le modèle TCP-IP est créé en en 1973, pour remplacer l'OSI. Il comporte 4 couches : application, transport, internet et accès réseau.<br><br>
+    </p>
+
+     <p>
+        <a class="btn"
+          href="https://fr.scribd.com/document/305691570/The-Political-Nature-of-TCP-IP"
+           target="_blank"
+           rel="noopener">Travail universitaire sur la portée politique du protocle TCP-IP (PDF)</a>
+    </p>
+
+     <p>
+        <a class="btn"
+         href="https://www.mathemagiques.fr/documentsNSI-Tle/reseaux/TCPIP.pdf"
+           target="_blank"
+           rel="noopener">Cours de spécialité NSI détaillant le fonctionnement du protocole TCP-IP (PDF)</a>
+    </p>
+
+
+    <a class="btn" href="../index.html">← Retour à la carte interactive</a>
+
+    <p><span class="cursor">_</span></p>
+</div>
+</body>
+</html>
 
