@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Les cookies, ou l'or de la donnée comportementale</title>
+
+    <!-- ==== STYLE ==== -->
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #ffed00;               
+            color: #000;                      
+            font-family: "Courier New", Courier, monospace;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;   /* centre vertical */
+            align-items: flex-start;   /* aligne à gauche (style console) */
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 2rem;
+            color: #000;
+        }
+
+        p {
+            margin: 1rem 0;
+        }
+
+        a, .btn {
+            display: inline-block;
+            margin: 0.4rem 0;
+            padding: 0.4rem 0.8rem;
+            color: #000;
+            background: transparent;
+            border: 1px solid #000;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        a:hover, .btn:hover {
+            background: #fb5bf9;
+            color: #000;
+        }
+
+        .cursor {
+            display: inline-block;
+            animation: blink 1s steps(2, start) infinite;
+        }
+        @keyframes blink {
+            to { visibility: hidden; }
+        }
+    </style>
+</head>
+
+<body>
+<div class="wrapper">
+    <h1>Les cookies, ou l'or de la donnée comportementale </h1>
+
+
+    <p>   
+   Une mine d'information sur les utilisateurs naît avec les cookies tiers de Netscape. La donnée, ou data, collectée devient un moyen pour les annonceurs d'affiner leur marketing (combien de clics, sur quel zone de l'écran, en combien de temps, etc). Avec l'éclatement de la bulle Internet en mars 2000, Eric Schmidt (ancien président de Google) décide de passer à la publicité ciblée, plus rémunératrice, pour sauver l'entreprise. Cette mesure d'urgence devient finalement permanente, au point de devenir le modèle économique de Google sur le temps long.
+    </p>
+
+     <p>
+        <a class="btn"
+          href="https://linc.cnil.fr/une-petite-histoire-du-cookie" 
+           target="_blank"
+           rel="noopener">Article de la CNIL sur l'histoire du cookie (page web)</a>
+    </p>
+
+
+    <a class="btn" href="../index.html">← Retour à la carte interactive</a>
+
+    <p><span class="cursor">_</span></p>
+</div>
+</body>
+</html>
+
