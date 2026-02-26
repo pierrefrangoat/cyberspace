@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Macintosh</title>
+
+    <!-- ==== STYLE ==== -->
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #ffed00;               
+            color: #000;                      
+            font-family: "Courier New", Courier, monospace;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;   /* centre vertical */
+            align-items: flex-start;   /* aligne à gauche (style console) */
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 2rem;
+            color: #000;
+        }
+
+        p {
+            margin: 1rem 0;
+        }
+
+        a, .btn {
+            display: inline-block;
+            margin: 0.4rem 0;
+            padding: 0.4rem 0.8rem;
+            color: #000;
+            background: transparent;
+            border: 1px solid #000;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        a:hover, .btn:hover {
+            background: #fb5bf9;
+            color: #000;
+        }
+
+        .cursor {
+            display: inline-block;
+            animation: blink 1s steps(2, start) infinite;
+        }
+        @keyframes blink {
+            to { visibility: hidden; }
+        }
+    </style>
+</head>
+
+<body>
+<div class="wrapper">
+    <h1>Forum WELL </h1>
+
+    <p>
+            Projet lancé en 1983 par Richard Stallman pour créer un système d'exploitation entièrement libre, donnant naissance à la licence GPL et à la communauté du logiciel libre.
+            Le site officiel présente ainsi l'initiative : "GNU est un système d'exploitation constitué de logiciel libre, c'est-à-dire qu'il respecte la liberté des utilisateurs. 
+            Le système d'exploitation GNU comprend des logiciels GNU (programmes publiés par le projet GNU) ainsi que des logiciels libres publiés par des tiers. 
+            Le développement de GNU a rendu possible l'utilisation d'un ordinateur sans logiciel susceptible de bafouer votre liberté".  <br><br>
+     
+    </p>
+
+    <p>
+        <a class="btn"
+           href="https://www.gnu.org/home.fr.html"
+           target="_blank"
+           rel="noopener">Site de GNU (page web)</a><br>
+    </p>
+
+    <a class="btn" href="../index.html">← Retour à la carte interactive</a>
+
+    <p><span class="cursor">_</span></p>
+</div>
+</body>
+</html>
