@@ -6,6 +6,13 @@
     <style>
         body {font-family:sans-serif; margin:20px;}
         area {cursor:pointer;}
+
+        .responsive-img {
+    max-width: 100%;      
+    height: auto;        
+    display: block;      
+    margin: 0 auto;       
+}
     </style>
 </head>
 <body>
@@ -17,7 +24,8 @@
      width="2388"
      height="1668"
      usemap="#map"
-     alt="Illustration interactive">
+     alt="Illustration interactive"²
+     class="responsive-img">
 
 <!-- ------------------- MAP ------------------- -->
 <map name="map">
@@ -318,7 +326,18 @@
           title="Esprit de ruche"
           href="pages/espritderuche.html" />
 </map>
+
 <script>
+// ==== Image‑Map Responsive (sans bibliothèque externe) ====
+
+/**
+ * Redimensionne les coordonnées d'une <map> en fonction de la taille actuelle
+ * de l'image liée (qui porte la classe .responsive-img).
+ *
+ * Fonctionnement :
+ * 1. On mémorise les coordonnées d'origine (en pixels réels) la première fois.
+ * 2. À chaque resize (ou au chargement), on calcule le ratio width/height.
+ * 3. On applique ce ratio aux coordonnées et on les réinjecte dans les <area>.
  */
 (function () {
     // Sélectionner l'image (celle qui possède usemap)
@@ -372,6 +391,5 @@
     window.addEventListener('resize', resizeMap);
 })();
 </script>
-    
 </body>
 </html>
