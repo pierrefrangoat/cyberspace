@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Viaweb : le web à portée de tous ? </title>
+
+    <!-- ==== STYLE ==== -->
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #ffed00;               
+            color: #000;                      
+            font-family: "Courier New", Courier, monospace;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;   /* centre vertical */
+            align-items: flex-start;   /* aligne à gauche (style console) */
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 2rem;
+            color: #000;
+        }
+
+        p {
+            margin: 1rem 0;
+        }
+
+        a, .btn {
+            display: inline-block;
+            margin: 0.4rem 0;
+            padding: 0.4rem 0.8rem;
+            color: #000;
+            background: transparent;
+            border: 1px solid #000;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        a:hover, .btn:hover {
+            background: #fb5bf9;
+            color: #000;
+        }
+
+        .cursor {
+            display: inline-block;
+            animation: blink 1s steps(2, start) infinite;
+        }
+        @keyframes blink {
+            to { visibility: hidden; }
+        }
+    </style>
+</head>
+
+<body>
+<div class="wrapper">
+    <h1>Viaweb : le web à portée de tous ? </h1>
+
+
+    <p>   
+    Juillet 2007: la crise de Subprimes éclate aux États-Unis. Alors que la majorité des investisseurs sont dépassés, une boîte surnage : Blackrock. En effet, grâce à, Aladdin, sa plateforme en gestion de risque déjà boostée à l'intelligence artificielle. L'outil est si performant que, submergé par la crise, le Trésor Américain s'empare d'Aladdin pour repérer les créances toxiques en circulation. C'est à ce momen Aujourd'hui Aladdin collecte quotidiennement plus de 200 millions de points de données, incluant les cours des marchés, les indicateurs économiques, les actualités, la météo, les crises géopolitiques ou les catastrophes naturelles, puis les traite à la seconde. Le logiciel permet de simuler des scénarios extrêmes, de réaliser des tests de résistance et d’évaluer la valeur à risque des portefeuilles. Et c'est sans nul doute grâce à cette maîtrise de la data, nouvel or noir, que Blackrock a su s'imposer, pour apparaître aujourd'hui comme le plus grand gestionnaire d'actifs au monde. 
+    </p>
+
+
+    <a class="btn" href="../index.html">← Retour à la carte interactive</a>
+
+    <p><span class="cursor">_</span></p>
+</div>
+</body>
+</html>
