@@ -318,6 +318,60 @@
           title="Esprit de ruche"
           href="pages/espritderuche.html" />
 </map>
+<script>
+ */
+(function () {
+    // Sélectionner l'image (celle qui possède usemap)
+    const img = document.querySelector('img[usemap]');
+    if (!img) return; // aucune image‑map → on sort
 
+    // Ajouter la classe responsive‑img si elle n’est pas déjà dans le HTML
+    img.classList.add('responsive-img');
+
+    // Récupérer la map associée (le #id après usemap)
+    const mapName = img.getAttribute('usemap').replace('#', '');
+    const map = document.querySelector(`map[name="${mapName}"]`);
+    if (!map) return;
+
+    // Stocker les coordonnées originales (avant tout redimensionnement)
+    const areas = Array.from(map.getElementsByTagName('area'));
+    areas.forEach(area => {
+        // Si on n’a pas encore sauvegardé les coords d’origine, on les garde
+        if (!area.dataset.originalCoords) {
+            area.dataset.originalCoords = area.getAttribute('coords');
+        }
+    });
+
+    // Fonction qui met à jour les coordonnées
+    function resizeMap() {
+        // Dimensions actuelles de l’image (après mise à l’échelle)
+        const curWidth  = img.clientWidth;
+        const curHeight = img.clientHeight;
+
+        // Dimensions d’origine (celles que vous aviez dans le HTML)
+        const origWidth  = parseInt(img.getAttribute('width'), 10);
+        const origHeight = parseInt(img.getAttribute('height'), 10);
+
+        // Facteurs de mise à l’échelle
+        const scaleX = curWidth  / origWidth;
+        const scaleY = curHeight / origHeight;
+
+        // Appliquer le facteur à chaque zone
+        areas.forEach(area => {
+            const original = area.dataset.originalCoords.split(',').map(Number);
+            const scaled = original.map((val, idx) =>
+                // indices pairs = x, impairs = y
+                idx % 2 === 0 ? Math.round(val * scaleX) : Math.round(val * scaleY)
+            );
+            area.setAttribute('coords', scaled.join(','));
+        });
+    }
+
+    // Au chargement initial et à chaque redimensionnement de fenêtre
+    window.addEventListener('load', resizeMap);
+    window.addEventListener('resize', resizeMap);
+})();
+</script>
+    
 </body>
 </html>
