@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>L'aîné IBM , ou "Big blue"</title>
+
+    <!-- ==== STYLE ==== -->
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #ffed00;               
+            color: #000;                      
+            font-family: "Courier New", Courier, monospace;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;   /* centre vertical */
+            align-items: flex-start;   /* aligne à gauche (style console) */
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 2rem;
+            color: #000;
+        }
+
+        p {
+            margin: 1rem 0;
+        }
+
+        a, .btn {
+            display: inline-block;
+            margin: 0.4rem 0;
+            padding: 0.4rem 0.8rem;
+            color: #000;
+            background: transparent;
+            border: 1px solid #000;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        a:hover, .btn:hover {
+            background: #fb5bf9;
+            color: #000;
+        }
+
+        .cursor {
+            display: inline-block;
+            animation: blink 1s steps(2, start) infinite;
+        }
+        @keyframes blink {
+            to { visibility: hidden; }
+        }
+    </style>
+</head>
+
+<body>
+<div class="wrapper">
+    <h1>L'aîné IBM, ou "Big blue" </h1>
+
+
+    <p>   
+  IBM est une entreprise américaine fondée en 1911 Durant les décennies suivantes, IBM devient un leader mondial des machines de traitement de données (déjà, dans les années 1930, elle fournit des moyens de surveillance de citoyens ciblés, pour le compte des gouvernements américain et...allemand ! Plus tard, IBM s'impose comme pionnier des ordinateurs centraux (mainframes) avec la série System/360, lancée en 1964, qui domine le marché pendant des décennies. L’entreprise révolutionne aussi l’informatique avec des innovations majeures : le disque dur (1956), le langage FORTRAN (1957), le code-barres, la mémoire dynamique (DRAM), et la base de données relationnelle. En 1981, IBM bouleverse le marché en lançant le PC 5150, le premier ordinateur personnel grand public, dont l’architecture ouverte devient le standard industriel.  Ce succès est renforcé par la collaboration avec Microsoft (pour le système d’exploitation) et Intel (pour le processeur). Face à la concurrence croissante des PC compatibles, IBM cesse sa production de PC en 2005 en les vendant à Lenovo.  Depuis, l’entreprise s’est recentrée sur le cloud, l’intelligence artificielle (notamment avec Watson), les supercalculateurs, et les services d’infrastructure. IBM reste un acteur majeur de la recherche technologique, avec des milliers de brevets déposés chaque année.
+    </p>
+
+    <a class="btn" href="../index.html">← Retour à la carte interactive</a>
+
+    <p><span class="cursor">_</span></p>
+</div>
+</body>
+</html>
+
